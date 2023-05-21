@@ -122,23 +122,25 @@ h1 {
 }
 
 .intro-content {
-    position: relative;
+    position: center;
     top: -8rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
     height: 100vh;
+    text-align: center;
   }
   
-  .intro-text-content, .intro-img {
+  .intro-text-content, .intro-img, h2, h3 {
     display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: center center;
     justify-content: center;
     color: white;
   }
   
   .intro-text-content h2 {
+    display: flex;
     font-size: 5rem;
     margin-bottom: 2rem;
     text-transform: uppercase;
@@ -147,12 +149,11 @@ h1 {
   
   .intro-img img,
   .intro-img svg {
-    max-width: 80%;
+    max-width: 70%;
     height: auto;
   }
 
   .gallery-img img:hover {
-    transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
   }
 
   .gallery-img {
@@ -161,7 +162,7 @@ h1 {
   }
 
   .gallery-img img {
-    transition: all 300ms ease-in-out;
+    transition: all 100ms ease-in-out;
   }
 
   .grid-one-content {
@@ -187,28 +188,19 @@ h1 {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 4fr);
-    gap: 10px;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
     counter-reset: grid;
   }
   
-  .info {
-      width: 330rem;
-      display: block;
-      justify-content: center;
-      height: 100vh;
-      text-align: center;
-  }                     
+  .intro {
+    display: inline-block;
+  }
+                   
 
   .cancao {
     font-size: 1.8rem;
   }
-
-
-
-
-
-
 
 
   @media (max-width: 800px) {
